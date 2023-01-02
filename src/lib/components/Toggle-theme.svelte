@@ -93,6 +93,10 @@
                     border-radius: 50%;
                 }
             }
+
+            button:hover .cursor {
+                filter: brightness(1.8);
+            }
         }
     }
 </style>

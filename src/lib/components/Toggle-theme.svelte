@@ -29,7 +29,7 @@
 </div>
 
 <style lang="scss">
-    @import "./../style/colors.scss";
+    @import "./../style/colorsTheme1.scss";
 
     div.container {
         width: 150px;
@@ -89,7 +89,7 @@
                 .cursor {
                     width: 18px;
                     height: 18px;
-                    background-color: $red-key-bg;
+                    background-color: $dangerous-key-bg;
                     border-radius: 50%;
                 }
             }

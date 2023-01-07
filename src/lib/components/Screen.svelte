@@ -3,7 +3,7 @@
 </div>
 
 <style lang="scss">
-    @import "./../style/colors.scss";
+    @import "./../style/colorsTheme1.scss";
 
     div {
         background-color: $screen-bg;

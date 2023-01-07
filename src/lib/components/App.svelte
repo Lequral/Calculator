@@ -6,7 +6,7 @@
 
 
 <header>
-    <h3>calc</h3>
+    <h4>calc</h4>
 
     <ToggleTheme />
 </header>
@@ -18,7 +18,7 @@
 
 
 <style lang="scss">
-    @import "./../style/colors.scss";
+    @import "./../style/colorsTheme1.scss";
 
     header {
         width: 100%;
@@ -29,7 +29,7 @@
         justify-content: space-between;
         align-items: center;
 
-        padding: 0 10px;
+        padding: 0 0 0 5px;
         box-sizing: border-box;
-    }
+        }
 </style>

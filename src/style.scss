@@ -1,4 +1,4 @@
-@import "./lib/style/colors.scss";
+@import "./lib/style/colorsTheme1.scss";
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 
 body {
@@ -7,12 +7,12 @@ body {
     margin: 0;
     padding: 0;
 
-    p, h1, h2, h3 {
+    p, h1, h2, h3, h4, h5, h6 {
         margin: 0;
         padding: 0;
     }
 
-    color: $white;
+    color: $header-screen-color;
     font-family: "League Spartan";
     font-size: 32px;
 
@@ -24,7 +24,7 @@ body {
 }
 
 main {
-    width: 555px;
+    width: 540px;
     height: 700px;
 
     display: flex;

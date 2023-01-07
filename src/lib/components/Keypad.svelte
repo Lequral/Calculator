@@ -20,11 +20,11 @@
 </div>
 
 <style lang="scss">
-    @import "./../style/colors.scss";
+    @import "./../style/colorsTheme1.scss";
 
     div.keypad {
         width: 100%;
-        height: 480px;
+        height: 490px;
 
         box-sizing: border-box;
         padding: 30px;
@@ -34,6 +34,6 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        align-items: space-between;
+        align-content: space-between;
     }
 </style>

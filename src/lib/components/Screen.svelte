@@ -1,5 +1,9 @@
+<script>
+    import { input } from "../stores/inputStore";
+</script>
+
 <div>
-    <h1>101</h1>
+    <h1>{ $input }</h1>
 </div>
 
 <style lang="scss">

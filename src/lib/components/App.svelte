@@ -11,15 +11,14 @@
     <ToggleTheme />
 </header>
 
-
 <Screen />
+
 
 <Keypad />
 
 
-<style lang="scss">
+<style lang="scss" type="module">
     @import "./../style/colorsTheme1.scss";
-
     header {
         width: 100%;
         height: 50px;

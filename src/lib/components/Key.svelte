@@ -1,6 +1,15 @@
 <script lang="ts">
+    import { input } from "../stores/inputStore";
+
     export let value: string;
     export let color: string = "white";
+
+    let text:string;
+    if (value === "*") {
+        text = "x";
+    } else {
+        text = value;
+    }
 
     let pressed = false;
     let width: string;
@@ -11,18 +20,30 @@
         width = "short";
     }
 
-    const startPressing = () => pressed = true
-    const stopPressing = () => pressed = false
+    const startPressing = () => (pressed = true);
+    const stopPressing = () => (pressed = false);
+    const handleClick = () => {
+        if (value === "del") {
+            input.delete();
+        } else if (value === "reset") {
+            input.reset();
+        } else if (value === "=") {
+            input.evaluate();
+        } else {
+            input.append(value);
+        }
+    };
 </script>
 
 <button
     on:mousedown={startPressing}
-    on:click={stopPressing}
+    on:mouseup={stopPressing}
     on:mouseleave={stopPressing}
+    on:click={handleClick}
     class="{color} {width}"
     class:pressed
 >
-    <p>{value}</p>
+    <p>{text}</p>
 </button>
 
 <style lang="scss">

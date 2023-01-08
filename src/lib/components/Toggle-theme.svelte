@@ -1,14 +1,7 @@
 <script lang="ts">
-    let theme = 1
-    $: cursorY = ["flex-start", "center", "flex-end"][theme-1]
+    import { theme } from "../stores/themeStore.js"
 
-    const changeTheme = () => {
-        if (theme !== 3) {
-            theme++
-        } else {
-            theme = 1
-        }
-    };
+    $: cursorX = ["flex-start", "center", "flex-end"][$theme-1];
 </script>
 
 <div class="container">
@@ -19,10 +12,13 @@
     </ul>
 
     <div class="interactible">
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <p on:click={changeTheme} >theme</p>
+        <label for="theme-changer">theme</label>
 
-        <button on:click={changeTheme} style="justify-content: {cursorY};">
+        <button id="theme-changer"
+            on:click={theme.next}
+            tabindex="0"
+            style="justify-content: {cursorX};"
+        >
             <div class="cursor" />
         </button>
     </div>
@@ -69,12 +65,6 @@
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-
-            p {
-                text-align: left;
-                width: 50%;
-                cursor: pointer;
-            }
 
             button {
                 width: 50%;

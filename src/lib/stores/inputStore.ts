@@ -1,5 +1,5 @@
 import { writable } from "svelte/store";
-import { MathEvaluator } from "./../function/MathEvaluator";
+import { MathEvaluator } from "../function/math";
 
 function createInput() {
     const { subscribe, update, set } = writable("0");

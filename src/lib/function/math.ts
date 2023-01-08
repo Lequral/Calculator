@@ -254,10 +254,10 @@ export const MathEvaluator = (function () {
 	}
 
 	// grammer configuration
-	symbol("(literal)").prototype.nud = function () {
+	symbol("(literal)", null).prototype.nud = function () {
 		return this;
 	};
-	symbol("(name)").prototype.nud = function () {
+	symbol("(name)", null).prototype.nud = function () {
 		return this;
 	};
 	symbol("<<", 100);
@@ -270,7 +270,7 @@ export const MathEvaluator = (function () {
 	symbol("%", 120);
 	symbol("^", 130);
 	symbol("(", 150);
-	symbol(")");
+	symbol(")", null);
 	symbolTable["("].prototype.nud = function () {
 		var expr = expression(0);
 		expect(")");
@@ -291,8 +291,8 @@ export const MathEvaluator = (function () {
 		expect(")");
 		return this;
 	};
-	symbol(",");
-	symbol("(end)");
+	symbol(",", null);
+	symbol("(end)", null);
 
 	infix("<<", 100);
 	infix(">>", 100);
@@ -365,6 +365,7 @@ export const MathEvaluator = (function () {
 				result = {
 					success: true,
 					answer: 0,
+					msg: null
 				};
 			try {
 				tokenize(expr.toLowerCase());

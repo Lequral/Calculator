@@ -17,7 +17,8 @@
         <button id="theme-changer"
             on:click={theme.next}
             tabindex="0"
-            style="justify-content: {cursorX};"
+            style="justify-content: {cursorX};" 
+            class="theme{$theme}"
         >
             <div class="cursor" />
         </button>
@@ -25,7 +26,7 @@
 </div>
 
 <style lang="scss">
-    @import "./../style/colorsTheme1.scss";
+    @import "./../style/colorsTheme.scss";
 
     div.container {
         width: 150px;
@@ -71,7 +72,6 @@
                 height: 28px;
                 border: 0;
                 border-radius: 14px;
-                background-color: $keypad-bg;
 
                 display: flex;
                 align-items: center;
@@ -79,7 +79,6 @@
                 .cursor {
                     width: 18px;
                     height: 18px;
-                    background-color: $dangerous-key-bg;
                     border-radius: 50%;
                 }
             }
@@ -87,6 +86,28 @@
             button:hover .cursor {
                 filter: brightness(1.8);
             }
+        }
+    }
+
+    div.interactible button.theme1 {
+        background-color: $T1-keypad-bg;
+
+        .cursor {
+            background-color: $T1-dangerous-key-bg;
+        }
+    }
+    div.interactible button.theme2 {
+        background-color: $T2-keypad-bg;
+
+        .cursor {
+            background-color: $T2-dangerous-key-bg;
+        }
+    }
+    div.interactible button.theme3 {
+        background-color: $T3-keypad-bg;
+
+        .cursor {
+            background-color: $T3-dangerous-key-bg;
         }
     }
 </style>

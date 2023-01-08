@@ -2,7 +2,7 @@ import './style.scss'
 import App from './lib/components/App.svelte'
 
 const app = new App({
-  target: document.querySelector("main"),
+  target: document.querySelector("body"),
 })
 
 export default app

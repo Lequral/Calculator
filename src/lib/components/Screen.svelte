@@ -1,16 +1,16 @@
 <script>
     import { input } from "../stores/inputStore";
+    import { theme } from "../stores/themeStore";
 </script>
 
-<div>
+<div class="theme{$theme}">
     <h1>{ $input }</h1>
 </div>
 
 <style lang="scss">
-    @import "./../style/colorsTheme1.scss";
+    @import "./../style/colorsTheme.scss";
 
     div {
-        background-color: $screen-bg;
         border-radius: 10px;
         box-sizing: border-box;
 
@@ -28,5 +28,14 @@
             top: 5px;
             width: 100%;
         }
+    }
+    div.theme1 {
+        background-color: $T1-screen-bg;
+    }
+    div.theme2 {
+        background-color: $T2-screen-bg;
+    }
+    div.theme3 {
+        background-color: $T3-screen-bg;
     }
 </style>

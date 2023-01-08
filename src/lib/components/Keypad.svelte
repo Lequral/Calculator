@@ -2,7 +2,6 @@
     import { theme } from "../stores/themeStore";
     import Key from "./Key.svelte";
 
-
     let keys = [
         "7", "8", "9", "del",
         "4", "5", "6", "+",

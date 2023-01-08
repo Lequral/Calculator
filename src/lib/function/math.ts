@@ -1,8 +1,3 @@
-/*!
-Math Evaluator by morriswmz (https://github.com/morriswmz/MathEvaluator.js)
-===========================
-Based on http://effbot.org/zone/simple-top-down-parsing.htm
-*/
 export const MathEvaluator = (function () {
 	var symbolTable = {},
 		mathFunctions = {

@@ -6,7 +6,7 @@ function createInput() {
 
     return {
         subscribe,
-        append: (/** @type {string} */ char) => update(text => {
+        append: char => update(text => {
             if (text === "0") {
                 return char
             } else {

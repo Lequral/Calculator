@@ -1,6 +1,7 @@
 # Frontend Mentor - Calculator app solution
 
 This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). 
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -41,6 +42,7 @@ The user is able to:
 - SASS
 - [Typescript's page](https://www.typescriptlang.org/) - Typescript
 - [Svelte's page](https://svelte.dev/) - Svelte framework
+- [github repo](https://github.com/morriswmz/MathEvaluator.js) Math Evaluator by morriswmz
 
 ### What I learned
 

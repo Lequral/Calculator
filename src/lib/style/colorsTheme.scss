@@ -1,60 +1,49 @@
-// THEME 1
 $T1-main-bg: hsl(222, 26%, 31%);
-$T1-keypad-bg: hsl(223, 31%, 20%); // toggle-bg
+$T1-keypad-bg: hsl(223, 31%, 20%);
 $T1-screen-bg: hsl(224, 36%, 15%);
 
-// Keys
 $T1-special-key-bg: hsl(225, 21%, 49%);
 $T1-special-key-shadow: hsl(224, 28%, 35%);
-$T1-dangerous-key-bg: hsl(6, 63%, 50%); // cursor-bg
+$T1-dangerous-key-bg: hsl(6, 63%, 50%);
 $T1-dangerous-key-shadow: hsl(6, 70%, 34%);
 $T1-simple-key-bg: hsl(30, 25%, 89%);
 $T1-simple-key-shadow: hsl(28, 16%, 65%);
 
-// Text
 $T1-header-screen-color: hsl(0, 0%, 100%);
 $T1-simple-key-color: hsl(221, 14%, 31%);
 $T1-special-key-color: hsl(0, 0%, 100%);
 $T1-dangerous-key-color: hsl(0, 0%, 100%);
 
-// $grey: hsl(221, 14%, 31%);
-// --white: hsl(0, 0%, 100%);
 
 
-// THEME 2
 $T2-main-bg: hsl(0, 0%, 90%);
-$T2-keypad-bg: hsl(0, 5%, 81%); // toggle-bg
+$T2-keypad-bg: hsl(0, 5%, 81%);
 $T2-screen-bg: hsl(0, 0%, 93%);
 
-// Keys
 $T2-special-key-bg: hsl(185, 42%, 37%);
 $T2-special-key-shadow: hsl(185, 58%, 25%);
-$T2-dangerous-key-bg: hsl(25, 98%, 40%); // cursor-bg
+$T2-dangerous-key-bg: hsl(25, 98%, 40%);
 $T2-dangerous-key-shadow: hsl(25, 99%, 27%);
 $T2-simple-key-bg: hsl(45, 7%, 89%);
 $T2-simple-key-shadow: hsl(35, 11%, 61%);
 
-// Text
 $T2-header-screen-color: hsl(221, 14%, 31%);
 $T2-simple-key-color: hsl(221, 14%, 31%);
 $T2-special-key-color: hsl(0, 0%, 100%);
 $T2-dangerous-key-color: hsl(0, 0%, 100%);
 
 
-// THEME 3
 $T3-main-bg: hsl(268, 75%, 9%);
-$T3-keypad-bg: hsl(268, 71%, 12%); // toggle-bg
+$T3-keypad-bg: hsl(268, 71%, 12%);
 $T3-screen-bg: hsl(268, 71%, 12%);
 
-// Keys
 $T3-special-key-bg: hsl(281, 89%, 26%);
 $T3-special-key-shadow: hsl(285, 91%, 52%);
-$T3-dangerous-key-bg: hsl(176, 100%, 44%); // cursor-bg
+$T3-dangerous-key-bg: hsl(176, 100%, 44%);
 $T3-dangerous-key-shadow: hsl(177, 92%, 70%);
 $T3-simple-key-bg: hsl(268, 47%, 21%);
 $T3-simple-key-shadow: hsl(290, 70%, 36%);
 
-// Text
 $T3-header-screen-color: hsl(52, 100%, 62%);
 $T3-simple-key-color: hsl(52, 100%, 62%);
 $T3-special-key-color: hsl(0, 0%, 100%);

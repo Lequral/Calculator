@@ -31,7 +31,7 @@ The user is able to:
 ### Links
 
 - Solution URL: [github repo](https://github.com/Lequral/Calculator)
-- Live Site URL: [github live page]()
+- Live Site URL: [github live page](https://lequral.github.io/Calculator/)
 
 ## My process
 

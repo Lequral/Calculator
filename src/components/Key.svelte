@@ -43,8 +43,8 @@
     on:click={handleClick}
     class="{color} {width} theme{$theme}"
     class:pressed
->
-    <p>{text}</p>
+    >
+    {text}
 </button>
 
 <style lang="scss">

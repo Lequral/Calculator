@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { theme } from "./../stores/themeStore.js"
+    import { theme } from "./../stores/themeStore.js";
 
-    $: cursorX = ["flex-start", "center", "flex-end"][$theme-1];
+    $: cursorX = ["flex-start", "center", "flex-end"][$theme - 1];
 </script>
 
 <div class="container">
@@ -14,13 +14,15 @@
     <div class="interactible">
         <label for="theme-changer">theme</label>
 
-        <button id="theme-changer"
+        <button
+            id="theme-changer"
             on:click={theme.next}
             tabindex="0"
-            style="justify-content: {cursorX};" 
+            style="justify-content: {cursorX};"
             class="theme{$theme}"
+            aria-label="Theme changer"
         >
-            <div class="cursor" />
+            <!-- <div class="cursor" /> -->
         </button>
     </div>
 </div>
@@ -75,15 +77,15 @@
 
                 display: flex;
                 align-items: center;
-
-                .cursor {
-                    width: 18px;
-                    height: 18px;
-                    border-radius: 50%;
-                }
+            }
+            button::after {
+                content: "";
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
             }
 
-            button:hover .cursor {
+            button:hover::after {
                 filter: brightness(1.8);
             }
         }
@@ -91,23 +93,20 @@
 
     div.interactible button.theme1 {
         background-color: $T1-keypad-bg;
-
-        .cursor {
-            background-color: $T1-dangerous-key-bg;
-        }
+    }
+    button.theme1::after {
+        background-color: $T1-dangerous-key-bg;
     }
     div.interactible button.theme2 {
         background-color: $T2-keypad-bg;
-
-        .cursor {
-            background-color: $T2-dangerous-key-bg;
-        }
+    }
+    button.theme2::after {
+        background-color: $T2-dangerous-key-bg;
     }
     div.interactible button.theme3 {
         background-color: $T3-keypad-bg;
-
-        .cursor {
-            background-color: $T3-dangerous-key-bg;
-        }
+    }
+    button.theme3::after {
+        background-color: $T3-dangerous-key-bg;
     }
 </style>

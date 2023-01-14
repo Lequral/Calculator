@@ -27,7 +27,7 @@ The user is able to:
 
 ### Screenshot
 
-![a screenshot with the first color theme](./src/assets/screenshot-theme1.png)
+![a screenshot with the first color theme](./screenshot-theme1.png)
 
 ### Links
 
@@ -53,4 +53,4 @@ I'm happy to finally finish this project. It was a way a for me to get into type
 
 - [Svelte tutorials](https://svelte.dev/tutorial/basics) - This helped me to learn svelte.
 - [Beginner's Guide to Using SCSS](https://www.code-boost.com/beginners-guide-to-scss/#mixins) - This is an nice article which helped me learn scss quickly.
-- [Typescript Documentation](https://www.typescriptlang.org/docs/handbook/2/basic-types.html) - This article summarized me the features of typescript.
+- [Typescript Documentation](https://www.typescriptlang.org/docs/handbook/2/basic-types.html) - This article summarized me features of typescript.

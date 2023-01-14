@@ -56,6 +56,7 @@
         border-radius: 10px;
         font-family: "League Spartan";
         border: 10px solid var(--red) !important;
+        transition: 100ms;
     }
 
     .pressed {
@@ -130,7 +131,8 @@
         width: 230px;
     }
 
-    button.white.theme1:hover, button.white.theme2:hover {
+    button.white.theme1:hover,
+    button.white.theme2:hover {
         background-color: white;
     }
     button.white.theme3:hover {
@@ -151,13 +153,15 @@
     }
 
     button.red:hover p {
-            filter: brightness(3);
+        filter: brightness(3);
     }
     button.red.theme1:hover {
-        filter: brightness(1.5) drop-shadow(0px 4px 0px $T1-dangerous-key-shadow);
+        filter: brightness(1.5)
+            drop-shadow(0px 4px 0px $T1-dangerous-key-shadow);
     }
     button.red.theme2:hover {
-        filter: brightness(1.5) drop-shadow(0px 4px 0px $T2-dangerous-key-shadow);
+        filter: brightness(1.5)
+            drop-shadow(0px 4px 0px $T2-dangerous-key-shadow);
     }
     button.red.theme3:hover {
         filter: brightness(3) drop-shadow(0px 4px 0px $T3-dangerous-key-shadow);

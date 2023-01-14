@@ -1,28 +1,34 @@
 <script lang="ts">
+    import { fade } from "svelte/transition";
     import { theme } from "../stores/themeStore";
     import Keypad from "./Keypad.svelte";
     import Screen from "./Screen.svelte";
     import ToggleTheme from "./Toggle-theme.svelte";
 </script>
 
-<div class="body theme{$theme}">
-    <main>
-        <header>
-            <h4>calc</h4>
-    
-            <ToggleTheme />
-        </header>
-    
-        <Screen />
-    
-        <Keypad />
-    </main>
-</div>
+{#key theme}
+    <div class="body theme{$theme}" transition:fade>
+        <main>
+            <header>
+                <h4>calc</h4>
+        
+                <ToggleTheme />
+            </header>
+        
+            <Screen />
+        
+            <Keypad />
+        </main>
+    </div>
+{/key}
 
 
 <style lang="scss">
     @import "./../style/colorsTheme.scss";
-
+    div {
+        transition: 1s;
+    }
+    
     header {
         width: 100%;
         height: 50px;

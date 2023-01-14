@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { theme } from "../stores/themeStore.js"
+    import { theme } from "./../stores/themeStore.js"
 
     $: cursorX = ["flex-start", "center", "flex-end"][$theme-1];
 </script>

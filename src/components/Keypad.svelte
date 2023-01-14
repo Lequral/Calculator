@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { theme } from "../stores/themeStore";
+    import { theme } from "./../stores/themeStore";
     import Key from "./Key.svelte";
 
     let keys = [

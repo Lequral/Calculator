@@ -1,6 +1,6 @@
 <script>
-    import { input } from "../stores/inputStore";
-    import { theme } from "../stores/themeStore";
+    import { input } from "./../stores/inputStore";
+    import { theme } from "./../stores/themeStore";
 </script>
 
 <div class="theme{$theme}">

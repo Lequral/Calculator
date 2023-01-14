@@ -135,12 +135,9 @@
     button.white.theme2:hover {
         background-color: white;
     }
+    
     button.white.theme3:hover {
         filter: brightness(2) drop-shadow(0px 4px 0px $T3-simple-key-shadow);
-    }
-
-    button.blue:hover p {
-        filter: brightness(3);
     }
     button.blue.theme1:hover {
         filter: brightness(1.5) drop-shadow(0px 4px 0px $T1-special-key-shadow);
@@ -152,9 +149,6 @@
         filter: brightness(2) drop-shadow(0px 4px 0px $T3-special-key-shadow);
     }
 
-    button.red:hover p {
-        filter: brightness(3);
-    }
     button.red.theme1:hover {
         filter: brightness(1.5)
             drop-shadow(0px 4px 0px $T1-dangerous-key-shadow);

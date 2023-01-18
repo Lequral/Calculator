@@ -4,7 +4,7 @@
 </script>
 
 <div class="theme{$theme}">
-    <h1>{ $input }</h1>
+    <h1>{$input}</h1>
 </div>
 
 <style lang="scss">
@@ -27,6 +27,8 @@
             position: relative;
             top: 5px;
             width: 100%;
+            overflow: auto;
+            max-height: 76.8px;
         }
     }
     div.theme1 {

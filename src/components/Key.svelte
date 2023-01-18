@@ -43,7 +43,7 @@
     on:click={handleClick}
     class="{color} {width} theme{$theme}"
     class:pressed
-    >
+>
     {text}
 </button>
 
@@ -52,7 +52,6 @@
 
     button {
         height: 60px;
-        // border: 0;
         border-radius: 10px;
         font-family: "League Spartan";
         border: 10px solid var(--red) !important;
@@ -66,6 +65,7 @@
 
     .white {
         font-size: 38px;
+        padding-top: 5px;
     }
     .white.theme1 {
         background-color: $T1-simple-key-bg;
@@ -131,11 +131,33 @@
         width: 230px;
     }
 
+    @media screen and (max-width: 600px) {
+        button {
+            border-radius: 6px;
+        }
+
+        .short {
+            width: 60px;
+        }
+
+        .long {
+            width: 135px;
+        }
+
+        .blue {
+            font-size: 20px;
+        }
+
+        .white {
+            font-size: 30px;
+        }
+    }
+
     button.white.theme1:hover,
     button.white.theme2:hover {
         background-color: white;
     }
-    
+
     button.white.theme3:hover {
         filter: brightness(2) drop-shadow(0px 4px 0px $T3-simple-key-shadow);
     }

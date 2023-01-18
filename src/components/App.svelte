@@ -48,6 +48,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 20px;
     }
     .body.theme1 {
         color: $T1-header-screen-color;
@@ -71,5 +72,12 @@
         justify-content: space-between;
         align-items: center;
         row-gap: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+        main {
+            width: 350px;
+            height: 660px;
+        }
     }
 </style>
